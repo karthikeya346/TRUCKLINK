@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.auth-left {
+    background: linear-gradient(135deg, #f97316, #fb923c, #fdba74);
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-box {
+    max-width: 480px;
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.brand-logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brand-box h1 {
+    font-size: 48px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.brand-box p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #fff7ed;
+}
+
+.feature-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.16);
+    padding: 16px 18px;
+    border-radius: 16px;
+    font-size: 15px;
+    backdrop-filter: blur(4px);
+}
+
+.auth-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #f8fafc;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    background: white;
+    border-radius: 26px;
+    padding: 36px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.auth-card h2 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    color: #64748b;
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+.auth-alert {
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auth-alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 14px 15px;
+    border: 1px solid #dbe2ea;
+    border-radius: 14px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
+}
+
+.auth-btn {
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-top: 6px;
+}
+
+.auth-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(249, 115, 22, 0.24);
+}
+
+.auth-footer {
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 14px;
+    text-align: center;
+}
+
+.auth-footer a {
+    color: #ea580c;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-left {
+        padding: 40px 28px;
+    }
+
+    .auth-right {
+        padding: 28px;
+    }
+
+    .brand-box h1 {
+        font-size: 38px;
+    }
+}
+.auth-alert.success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+.landing-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.landing-btn {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.secondary-btn {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+}
+
+.secondary-btn:hover {
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.24);
+}
+.auth-alert.success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
